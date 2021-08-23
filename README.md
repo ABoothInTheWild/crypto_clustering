@@ -33,11 +33,11 @@ PCA is a statistical technique to speed up machine learning algorithms when the 
 
 I chose to use 3 principal components for visualization purposes. 
 
-![PCA](images/pca.png)
+![PCA](images/pca.PNG)
 
 Combined, only having three principal components accounted for less than 10% of the explained variance. This could be due to the fact that the feature set, including the encoded dummies, did not have much relation with each other.
 
-![PCA](images/pca_exp.png)
+![PCA](images/pca_exp.PNG)
 
 However, three components can easily be viewed in 3D scatter plots, which made the communication post-clustering quite effective.
 
@@ -51,7 +51,7 @@ The K-means algorithm groups the data into K clusters, where belonging to a clus
 
 An easy method for determining the best number for K is the elbow curve. Elbow curves get their names from their shape: they turn on a specific value, which looks a bit like an elbow! To create an elbow curve, we'll plot the clusters on the x-axis and the values of the corresponding inertia on the y-axis.
 
-![Elbow Curve](images/elbow.png)
+![Elbow Curve](images/elbow.PNG)
 
 When the three principal components are put through a K-Means analysis, the elbow plot indicates an obvious bend at k=4. With these features, the algorithm found an optimal way to group all of the cryptocurrencies into 4 classes.
 
@@ -59,21 +59,21 @@ __Visualizing Classes__
 
 I visualized the distinct groups that corresponded to the three principal components using 2D and 3D scatter plots. I also created a table with all the currently tradable cryptocurrencies and their predicted cluster.
 
-![Scatter 3D](images/scatter3d.png)
+![Scatter 3D](images/scatter3d.PNG)
 
 I scaled the Total Coin Supply and Total Coins Mined columns to standardize the axes for the 2D scatter plot.
 
-![Scatter 2D](images/scatter2d.png)
+![Scatter 2D](images/scatter2d.PNG)
 
 Finally, below are snapshots of the predicted classes.
 
-![Group 0](images/group0.png)
+![Group 0](images/group0.PNG)
 
-![Group 1](images/group1.png)
+![Group 1](images/group1.PNG)
 
-![Group 2](images/group3.png)
+![Group 2](images/group3.PNG)
 
-![Group 3](images/group2.png)
+![Group 3](images/group2.PNG)
 
 __Summary and Conclusions__
 
